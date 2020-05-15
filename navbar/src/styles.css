@@ -1,0 +1,59 @@
+:root {
+  --color-primary-1: rgba(23, 243, 224, 0.204);
+  --color-primary-2: rgb(7, 42, 170);
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+.App {
+  font-family: "sans-serif";
+  /* text-align: center; */
+}
+
+body {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.451)
+    ),
+    url("https://wallpaperplay.com/walls/full/7/2/9/17340.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+
+  color: white;
+  font-family: "Ubuntu";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Margins */
+
+.u-marginb-big {
+  margin-bottom: 12rem;
+}
+
+.u-marginb-medium {
+  margin-bottom: 6rem;
+}
+
+.u-marginb-small {
+  margin-bottom: 2rem;
+}

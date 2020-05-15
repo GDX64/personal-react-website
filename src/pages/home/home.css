@@ -1,0 +1,84 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: "Lato";
+  width: 100%;
+  flex-wrap: wrap;
+  
+}
+
+.home-content {
+  flex: 0 1 1000px;
+  margin: auto 2rem;
+  background-color: rgba(255, 192, 203, 0);
+  overflow: hidden;
+}
+
+.presentation-container {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.main-header {
+  position: relative;
+  animation-name: to-right;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.secondary-header {
+  position: relative;
+  animation-name: to-left;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.tertiary-header {
+  position: relative;
+  animation-name: show;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+
+.paragraph {
+  position: relative;
+  animation-name: show;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes to-right {
+  0% {
+    opacity: 0;
+    left: -10rem;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes to-left {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

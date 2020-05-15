@@ -1,0 +1,44 @@
+.footer-container {
+  min-height: 10vh;
+  background-color: var(--color-primary-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contacts {
+  display: flex;
+  transition: all 0.5s;
+}
+
+.contact {
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.email-popover {
+  display: inline;
+  font-size: 1rem;
+  margin-left: 1rem;
+  transition: all 0.5s;
+}
+
+.hidden-email-popover {
+  font-size: 0rem;
+}
+
+a {
+  color: inherit;
+}
+
+i {
+  transition: all 0.2s;
+}
+
+i:hover {
+  color: var(--color-primary-2);
+  cursor: pointer;
+  transform: scale(1.3);
+}

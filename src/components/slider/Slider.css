@@ -1,0 +1,28 @@
+.slick .slick-prev:before, .slick .slick-next:before{
+    font-size: 30px;
+}
+
+.slick .slick-arrow{
+    z-index: 100;
+}
+
+.slick .slick-arrow.slick-prev{
+    left: 15px;
+}
+
+.slick .slick-arrow.slick-next{
+    right: 25px;
+}
+
+/* This is a hack to fix the problem with flexbox and slider */
+
+.slick, .slick *{
+    text-align: center;
+    min-width: 0;
+    min-height: 0;
+}
+
+.slide *{
+    text-align: center;
+    margin: auto;
+}
