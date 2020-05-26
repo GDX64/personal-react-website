@@ -2,6 +2,7 @@
   --color-primary-1: rgba(23, 243, 224, 0.204);
   --color-primary-2: rgb(7, 42, 170);
   --color-primary-3: rgb(56, 148, 148);
+  --color-menu-1: rgba(15, 124, 128, 0.918);
 }
 
 @media only screen and (max-width: 600px) {
@@ -13,6 +14,7 @@
 .App {
   font-family: "sans-serif";
   /* text-align: center; */
+  overflow: hidden;
 }
 
 body {
@@ -21,7 +23,7 @@ body {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.451)
     ),
-    url("https://wallpaperplay.com/walls/full/7/2/9/17340.jpg");
+    url("/img/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
@@ -47,6 +49,9 @@ body {
 
 /* Margins */
 
+.u-marginb-huge {
+  margin-bottom: 24rem;
+}
 .u-marginb-big {
   margin-bottom: 12rem;
 }
@@ -57,4 +62,22 @@ body {
 
 .u-marginb-small {
   margin-bottom: 2rem;
+}
+
+.u-margint-big {
+  margin-top: 12rem;
+}
+
+.u-margint-medium {
+  margin-top: 6rem;
+}
+
+.u-margint-small {
+  margin-top: 2rem;
+}
+
+/* Text styles */
+
+.outside-link{
+  color: aquamarine;
 }

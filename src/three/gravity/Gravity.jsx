@@ -82,11 +82,11 @@ function init() {
     composer.addPass(renderPass);
     composer.addPass(bloomPass);
 
-    initGUI(bloomPass)
+    //initGUI(bloomPass)
 
     //OrbitControls
     controls = new OrbitControls(camera, renderer.domElement);
-    controls.enableZoom = false;
+    controls.enableZoom = true;
 
 }
 
@@ -156,12 +156,23 @@ function initGUI(bloomPass) {
     });
 }
 
-function Gravity() {
-    init();
-    animate();
+class Gravity extends React.Component {
+    componentDidMount() {
+        init();
+        animate();
+    }
+    componentWillUnmount() {
+        console.log('Unmmonting');
+        const guiDOM = document.getElementsByClassName("dg main")[0]
+        if (guiDOM) guiDOM.remove()
 
-    return (<>
-    </>)
+    }
+
+    render() {
+
+
+        return (<div class="animation-div"></div>)
+    }
 }
 
 export default Gravity

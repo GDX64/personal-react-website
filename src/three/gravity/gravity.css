@@ -1,9 +1,9 @@
-body{
-    background-color: transparent;
-    background-image: none;
-}
 
 .animation-div{
     position: fixed;
-    z-index: -1;
+}
+
+.dg.main{
+    position: fixed;
+    top:0; left:0;
 }

@@ -1,0 +1,10 @@
+.robo-animation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.blog-container{
+    margin:0 2rem;
+}

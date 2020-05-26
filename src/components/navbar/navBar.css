@@ -1,9 +1,11 @@
 .nav-container {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-content: center;
   align-items: center;
   background-color: var(--color-primary-1);
+  z-index: 100;
 }
 
 .main-bullet {
@@ -11,6 +13,10 @@
   align-items: center;
   justify-items: center;
   height: 100%;
+}
+
+.mobile-menu{
+  display: none;
 }
 
 .nav-element,
@@ -52,4 +58,71 @@
 .logo {
   margin-left: 1.5rem;
   padding: 0.8rem 0;
+}
+
+@media only screen and (max-width: 600px){
+
+  .mobile-nav{
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    height: 100vh;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    background-color: var(--color-menu-1);
+
+    transition: all .3s;
+    transform: translateX(0);
+  }
+  
+  .nav-hidden{
+    transform: translateX(-30rem);
+  }
+
+  .main-bullet {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .logo{
+    margin: 0;
+    margin-bottom: 3rem;
+    padding: 0;
+  }
+
+  .nav-element,
+.nav-element:link,
+.nav-element:active {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  list-style: none;
+  padding: 0 0.7rem;
+  height: 6rem;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+}
+
+.mobile-menu{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 3rem;
+  right: 3rem;
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  text-align: center;
+  background-color: var(--color-menu-1);
+  cursor: pointer;
+  font-size: 2rem;
+}
 }
